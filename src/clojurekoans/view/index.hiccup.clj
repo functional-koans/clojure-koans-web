@@ -3,7 +3,7 @@
  [:div#inner-wrapper
   [:div.section
 
-   [:img#bull1 {:align "right" src "images/bull1.gif"}
+   [:img#bull1 {:align "right" :src "images/bull1.gif"}
     [:h1 "Introduction"]
 
     [:p "Clojure koans are exercises meant to initiate you to the mysteries of the Clojure. By following along the path set before you, you will touch on all"

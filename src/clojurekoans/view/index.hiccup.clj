@@ -113,7 +113,7 @@
     [:li "Doug South"]]]
 
   [:div.section
-   [:img#bull8 {:align "right" :src "images/bulls/bull8.gif"}]
+   [:img#bull8 {:align "right" :src "images/bulls/bull8.png"}]
    [:h1 "Credits"]
    [:p "These exercises were started by Aaron Bedra of Relevance, Inc. in early 2010, as a learning tool for newcomers"
     " to functional programming. Aaron's macro-fu makes these koans extremely simple and fun to use, and to improve upon,"

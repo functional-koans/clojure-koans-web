@@ -19,7 +19,7 @@
      "if you don't, it's not difficult. Oracle provides installation instructions for Windows users"
      [:a {:href "http://www.java.com/en/download/help/windows_manual_download.xml"} "here"]
      "and for Linux users"
-     [:a href {"http://www.java.com/en/download/help/linux_install.xml"} "here"]
+     [:a {:href "http://www.java.com/en/download/help/linux_install.xml"} "here"]
      ". Apple distributes Java 6 with their system update tool."]
     [:br]
     [:p "After downloading Java (if necessary), go to your console and enter:"]

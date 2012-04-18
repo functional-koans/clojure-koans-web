@@ -9,8 +9,7 @@
     [:p "Clojure koans are exercises meant to initiate you to the mysteries of the Clojure. By following along the path set before you, you will touch on all"
      " the major aspects of the language, from simple datatypes to macros, from tail recursion to Java interoperability. Many will find Clojure quite different"
      " from any programming language they've used before. The koans' incremental, interactive approach to learning the language will help make the transition"
-     " feel natural. By the time you are finished with them, Clojure will not be so mysterious at all."]
-    ]]
+     " feel natural. By the time you are finished with them, Clojure will not be so mysterious at all."]]]
 
   [:div.section
    [:img#bull2 {:align "right" :src "images/bulls/bull2.gif"}
@@ -45,4 +44,4 @@
      " the major aspects of the language, from simple datatypes to macros, from tail recursion to Java interoperability. Many will find Clojure quite different"
      " from any programming language they've used before. The koans' incremental, interactive approach to learning the language will help make the transition"
      " feel natural. By the time you are finished with them, Clojure will not be so mysterious at all."]
-    ]]]]]]]
+    ]]]]

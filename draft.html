@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset='utf-8' />
+	<title>Clojure Koans</title>
+	<link href='style.css' rel='stylesheet' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var nav = $('#stripe li');
+			nav.find('a').click(function() {
+				var li = $(this).closest('li');
+				var idx = $(nav).index(li);
+				var section = $('.section').eq(idx);
+
+				$('html, body').animate({scrollTop: section.offset().top})
+				return false;
+			});
+		});
+	</script>
+</head>
+
+
+<body>
+	<div id="outer-wrapper">
+		<div id="inner-wrapper">
+			<div class="rounded_top"></div>
+			<div class="section bull1">
+				<img align="right" id="bull1" src="bulls/bull1.gif" />
+				<h1>Introduction</h1>
+
+				<p>
+					Clojure koans are exercises meant to initiate you to the mysteries of the Clojure. By following along the path set before you, you will touch on all the major aspects of the language, from simple datatypes to macros, from tail recursion to Java interoperability. Many will find Clojure quite different from any programming language they've used before. The koans' incremental, interactive approach to learning the language will help make the transition feel natural. By the time you are finished with them, Clojure will not be so mysterious at all.  
+				</p>
+			</div>
+
+			<div class="section">
+				<img align="right" id="bull2" src="bulls/bull2.gif" />		
+				<h1>
+					Install Java
+				</h1>
+
+				<p>
+					Before we begin the koans, we need Clojure, and before we install Clojure, we'll need Java. You probably already have Java installed, but if you don't, it's not difficult. Oracle provides installation instructions for Windows users <a href="http://www.java.com/en/download/help/windows_manual_download.xml">here</a> and for Linux users <a href="http://www.java.com/en/download/help/linux_install.xml">here</a>. Apple distributes Java 6 with their system update tool.</p>
+
+					
+				<br />
+				<p>
+					After downloading Java (if necessary), go to your console and enter: 
+				</p>
+
+				<div class="terminal">~ $ java -version</div>
+
+				<p>
+					Make sure the version installed is 1.5 or greater.
+				</p>
+			</div>
+
+			<div class="section">
+				<img align="right" id="bull3" src="bulls/bull3.gif" />	
+				<h1>
+					Install Leiningen
+				</h1>
+
+				<p>
+					Now we're going to install Leiningen, Clojure's most popular dependency management tool. (It will install Clojure for us shortly.) If you have apt-get or homebrew, just run:
+				</p>
+
+				<div class="terminal">
+					~ $ <em>your_package_manager_here</em> install leiningen
+				</div>
+
+				<p>
+					and you're done! Otherwise, download the Leiningen script <a href="#">here</a> and place it on your $PATH.
+				</p>
+			</div>
+
+			<div class="section">
+				<img align="right" id="bull4" src="bulls/bull4.gif" />
+				<h1>
+					Download the Koans
+				</h1>
+
+				<p>
+					Download the Clojure koans directory and enter it in a console. The following command will tell Leiningen to install Clojure and all other dependencies necessary to run the koans:
+				</p>
+
+				<div class="terminal">
+					clojure-koans $ lein deps
+				</div>
+
+				<p>
+
+				</p>
+			</div>
+
+			<div class="section">
+				<img align="right" id="bull5" src="bulls/bull5.gif" />		
+				<h1>
+					Run the First Koan
+				</h1>
+
+				<p>
+					Once you're inside the koans directory, you can immediately begin by running
+				</p>
+
+				<div class="terminal">
+					clojure-koans $ lein deps
+				</div>
+
+				<p>
+					You'll probably see an error message like this:
+				</p>
+
+				<div class="terminal">
+					Problem in ~/clojure-koans/src/koans/equalities.clj<br />
+					---------------------<br />
+					Assertion failed!<br />
+					We shall contemplate truth by testing reality, via equality.</br >
+					(= __ true)
+				</div>
+
+				<p>
+					The output is telling you that you have a failing test in equalities.clj. So open that file up in a text editor and try to make it pass!
+				</p>
+
+				<div class="terminal">
+				  <span class="grey">; in src/koans/equalities.clj</span><br />
+				  "We shall contemplate truth by testing reality, via equality."<br />
+  				  (= __ true)
+				</div>
+
+				<p>
+					In general, you just fill in the blanks to make tests pass. Sometimes there are several (or even an infinite number) of correct answers: any of them will work in these cases.
+				</p>
+			</div>
+
+			<div class="section">
+				<img align="right" id="bull6" src="bulls/bull6.gif" />
+				<h1>Repeat</h1>
+
+				<p>
+					After you run and pass your first test, you'll find that the next one is failing. After all the tests in a file are passing, the run script will automatically begin testing the next file in the koans sequence. 
+				</p>
+			</div>
+
+			<div class="section">
+				<img align="right" id="bull7" src="bulls/bull7.gif" />		
+				<h1>A Word on Testing</h1>
+
+				<p>
+					The pattern of writing failing tests first and code to make them pass later is no mere novelty: it is the essence of test-driven development (TDD). The sages of TDD say that every new test should strive to be the simplest and most natural extension of those that come before it, so as to cover only one new part of the code. They also enjoin disciples to meditate on their progress regularly: after a test is made to pass, one should pause to refactor and refine one's code before moving on to the next test.
+				</p>
+				<br />
+				<p>
+					The koans, unlike tests in real test-driven projects, are already written for you. When you are ready to begin your own Clojure project and therefore your own tests, consider using a framework like Speclj to aid you on your journey. 
+				</p>
+			</div>
+
+			<div class="section">
+				<h1>Contributors</h1>
+				<ul class="contributors">
+					<li>Aaron Bedra</li>
+					<li>Colin Jones (maintainer)</li>
+					<li>Eric Lavigne</li>
+					<li>Nuno Marquez</li>
+					<li>Micah Martin</li>
+					<li>Michael Kohl</li>
+					<li>Ben Lickly</li>
+				</ul>
+				<ul class="contributors">
+					<li>Alex Robbins</li>
+					<li>Jaskirat Singh Veen</li>
+					<li>Mark Simpson</li>
+					<li>Mike Jansen</li>
+					<li>Caleb Phillips</li>
+					<li>Doug South</li>
+				</ul>
+			</div>
+
+			<div class="section">
+				<img align="right" id="bull8" src="bulls/bull8.png" />						
+				<h1>Credits</h1>
+				<p>
+					These exercises were started by Aaron Bedra of Relevance, Inc. in early 2010, as a learning tool for newcomers to functional programming. Aaron's macro-fu makes these koans extremely simple and fun to use, and to improve upon, and without Relevance's initiative, this project would not exist.
+				</p>
+				<br />
+				<p>
+					Using the koans metaphor as a tool for learning a programming language started with the Ruby Koans by EdgeCase.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="stripe">
+		<img src="logo.png" />
+		<ul>
+			<li>
+				<a href="#">
+					Introduction
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Install Java
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Install Leiningen
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Download the Koans
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Run the First Koan
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					Repeat
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					A Word on Testing
+				</a>
+			</li>
+		</ul>
+
+	</div>
+</body>
+</html>

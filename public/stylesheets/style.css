@@ -60,7 +60,7 @@ p a {
 	display: table-cell;
 	height: 100%;
 	width: 100%;
-	background-image: url('paper.jpg');
+	background-image: url('../images/paper.jpg');
 	background-attachment: fixed;
 	background-color: #FFF;
 	background-position: 0% 5%;
@@ -83,7 +83,7 @@ p a {
 	padding-top: 1em;
 	height: 95%;
 	/*width: 100%;*/
-	margin: 1em 0;$$$eio	`sau1J*71										
+	margin: 1em 0;$$$eio	`sau1J*71
 	width: 560px;
 	border-radius: 5px;
 	padding-left: 330px;
@@ -109,7 +109,7 @@ p a {
 	padding-top: 30px;
 	box-shadow: 0 0 7px black;
 	/*background-image: -webkit-linear-gradient(top, #B6D382 0%, #C9D1A4 100%);*/
-	background-image: url('bg5.png');
+	background-image: url('../images/bg5.png');
 }
 
 #stripe ul {
@@ -161,51 +161,51 @@ p a {
 
 #bull2 {
 	right: 0 !important;
-	bottom: -40px !important;	
+	bottom: -40px !important;
 	-webkit-transform: rotate(5deg);
 	-moz-transform: rotate(5deg);
 }
 
 #bull3 {
 	right: 40px !important;
-	bottom: -40px !important;	
+	bottom: -40px !important;
 	width: 250px;
 	height: 250px;
 }
 
 #bull4 {
 	right: 0 !important;
-	bottom: -150px !important;	
+	bottom: -150px !important;
 	width: 250px;
 	height: 250px;
 }
 
 #bull5 {
 	right: 0 !important;
-	bottom: -50px !important;	
+	bottom: -50px !important;
 	width: 250px;
 	height: 250px;
 	-webkit-transform: rotate(-5deg);
-	-moz-transform: rotate(-5deg);	
+	-moz-transform: rotate(-5deg);
 }
 
 #bull6 {
 	right: 20px !important;
-	bottom: -150px !important;	
+	bottom: -150px !important;
 	width: 250px;
 	height: 250px;
 }
 
 #bull7 {
 	right: 0 !important;
-	bottom: -250px !important;	
+	bottom: -250px !important;
 	width: 250px;
 	height: 250px;
 }
 
 #bull8 {
 	right: 0 !important;
-	bottom: -80px !important;	
+	bottom: -80px !important;
 	width: 250px;
 	height: 250px;
 }

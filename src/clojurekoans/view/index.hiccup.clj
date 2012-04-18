@@ -96,7 +96,7 @@
   [:div.section
    [:h1 "Contributors"]
 
-   [:ul
+   [:ul.contributors
     [:li "Aaron Bedra"]
     [:li "Colin Jones (maintainer)"]
     [:li "Eric Lavigne"]
@@ -104,7 +104,7 @@
     [:li "Micah Martin"]
     [:li "MIchael Kohl"]
     [:li "Ben Lickly"]]
-   [:ul
+   [:ul.contributors
     [:li "Alex Robbins"]
     [:li "Jaskirat Singh Veen"]
     [:li "Mark Simpson"]
@@ -113,5 +113,32 @@
     [:li "Doug South"]]]
 
   [:div.section
-]
-  ]]
+   [:img#bull8 {:align "right" :src "images/bulls/bull8.gif"}]
+   [:h1 "Credits"]
+   [:p "These exercises were started by Aaron Bedra of Relevance, Inc. in early 2010, as a learning tool for newcomers"
+    " to functional programming. Aaron's macro-fu makes these koans extremely simple and fun to use, and to improve upon,"
+    " and without Relevance's initiative, this project would not exist."]
+   [:br]
+   [:p "Using the koans metaphor as a tool for learning a programming language started with the Ruby Koans by EdgeCase."]]]]
+
+[:div#stripe
+ [:img {:src "images/logo.png"}]
+ [:ul
+  [:li
+   [:a {:href "#"} "Introduction"]]
+  [:li
+   [:a {:href "#"} "Install Java"]]
+  [:li
+   [:a {:href "#"} "Install Leiningen"]]
+  [:li
+   [:a {:href "#"} "Download the Koans"]]
+  [:li
+   [:a {:href "#"} "Run the First Koan"]]
+  [:li
+   [:a {:href "#"} "Repeat"]]
+  [:li
+   [:a {:href "#"} "A Word on Testing"]]
+  [:li
+   [:a {:href "#"} "Contributors"]]
+  [:li
+   [:a {:href "#"} "Credits"]]]]

@@ -116,7 +116,11 @@
     [:a {:href "http://thinkrelevance.com/"} "Relevance"]
     ". This website is produced and hosted by "
     [:a {:href "http://www.8thlight.com"} "8th Light"]
-    "."]]]
+    "."]]
+
+  [:p "If you have any questions or suggestions about the koans, feel free to contact "
+   [:a {:href} "Colin Jones"]
+   ". Further contributions are always welcome."]]
 
 [:div#stripe
  [:img {:src "images/logo.png"}]

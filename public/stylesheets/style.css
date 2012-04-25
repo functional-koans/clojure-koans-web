@@ -28,6 +28,9 @@ h1 {
 	-webkit-margin-after: 0;
 	-webkit-margin-before: 0;
 	padding-bottom: 25px;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 p {
@@ -49,9 +52,6 @@ p a {
 /*E96B42*/
 #outer-wrapper img {
 	position: absolute;
-	height: 200px;
-	width: 200px;
-	opacity: .1;
 	bottom: 10px;
 	right: 0;
 }
@@ -64,7 +64,7 @@ p a {
 	background-attachment: fixed;
 	background-color: #FFF;
 	background-position: 0% 5%;
-	vertical-align: middle;
+	vertical-align: top;
 	padding-bottom: 3em;
 }
 
@@ -76,6 +76,16 @@ p a {
 /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(50%,#fafafa), color-stop(51%,#f9f9f9), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */*/
 /*-moz-box-shadow: 10px 10px 5px #888;*/
 
+}
+
+#cover {
+	position: fixed;
+	height: 100%;
+	width: 331px;
+	z-index: 1;
+	background-image: url('../images/paper.jpg');
+	background-position: 0% 5%;	
+	top: 0;
 }
 
 #inner-wrapper {
@@ -109,7 +119,9 @@ p a {
 	padding-top: 30px;
 	box-shadow: 0 0 7px black;
 	/*background-image: -webkit-linear-gradient(top, #B6D382 0%, #C9D1A4 100%);*/
-	background-image: url('../images/bg5.png');
+	background-image: url('../images/bg5.jpg');
+	overflow: auto;
+	z-index: 2;
 }
 
 #stripe ul {
@@ -144,68 +156,115 @@ p a {
 	color: grey;
 }
 
+#dependencies {
+	padding: 1em 0;
+	font-size: .8em;
+}
+
 .contributors {
 	display: inline-table;
 	vertical-align: top;
 	padding-right: 3em;
 }
 
+.contributors li {
+        display: inline-block;
+        width: 50%;
+}
+
+#one {
+	background-image: url('../images/bulls/bull11.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-position: 122% 530%;
+}
+
+#two {
+	background-image: url('../images/bulls/bull2.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-position: 100% 119%;	
+}
+
+#three {
+	background-image: url('../images/bulls/bull3.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-position: 90% 107%;	
+}
+
+#four {
+	background-image: url('../images/bulls/bull4.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-position: 100% 95%;	
+}
+
+#five {
+	background-image: url('../images/bulls/bull5.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-position: 100% 106%;	
+}
+
+#seven {
+	background-image: url('../images/bulls/bull6.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-position: 107% -8%;	
+}
+
+#eight {
+	background-image: url('../images/bulls/bull7.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-position: 100% 53%;	
+}
+
+
+#nine {
+	background-image: url('../images/bulls/bull8.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-position: 100% 128%;	
+}
+
 #bull1 {
 	right: 0 !important;
-	height: 300px !important;
-	width: 300px !important;
 	bottom: -100px !important;
-	-webkit-transform: rotate(-10deg);
-	-moz-transform: rotate(-10deg);
 }
 
 #bull2 {
 	right: 0 !important;
 	bottom: -40px !important;
-	-webkit-transform: rotate(5deg);
-	-moz-transform: rotate(5deg);
 }
 
 #bull3 {
 	right: 40px !important;
 	bottom: -40px !important;
-	width: 250px;
-	height: 250px;
 }
 
 #bull4 {
 	right: 0 !important;
 	bottom: -150px !important;
-	width: 250px;
-	height: 250px;
 }
 
 #bull5 {
 	right: 0 !important;
 	bottom: -50px !important;
-	width: 250px;
-	height: 250px;
-	-webkit-transform: rotate(-5deg);
-	-moz-transform: rotate(-5deg);
 }
 
 #bull6 {
 	right: 20px !important;
 	bottom: -150px !important;
-	width: 250px;
-	height: 250px;
 }
 
 #bull7 {
 	right: 0 !important;
 	bottom: -250px !important;
-	width: 250px;
-	height: 250px;
 }
 
 #bull8 {
 	right: 0 !important;
 	bottom: -80px !important;
-	width: 250px;
-	height: 250px;
 }

@@ -1,24 +1,25 @@
 
 [:div {:id "outer-wrapper"}
+ [:div#cover]
  [:div#inner-wrapper
-  [:div.section
+  [:div#one.section
 
-   [:img#bull1 {:align "right" :src "images/bulls/bull1.gif"}]
    [:h1 "Introduction"]
 
-   [:p "Clojure koans are exercises meant to initiate you to the mysteries of the Clojure. By following along the path set before you, you will touch on all"
+   [:p "Clojure koans are exercised meant to initiate you to the mysteries of the "
+    [:a {:href "http://www.clojure.org"} "Clojure language"]
+    ". By following along the path set before you, you will touch on all"
     " the major aspects of the language, from simple datatypes to macros, from tail recursion to Java interoperability. Many will find Clojure quite different"
     " from any programming language they've used before. The koans' incremental, interactive approach to learning the language will help make the transition"
     " feel natural. By the time you are finished with them, Clojure will not be so mysterious at all."]]
 
-  [:div.section
-   [:img#bull2 {:align "right" :src "images/bulls/bull2.gif"}]
+  [:div#two.section
    [:h1 "Install Java"]
 
    [:p " Before we begin the koans, we need Clojure, and before we install Clojure, we'll need Java. You probably already have Java installed, but"
     "if you don't, it's not difficult. Oracle provides installation instructions for Windows users"
-    [:a {:href "http://www.java.com/en/download/help/windows_manual_download.xml"} "here"]
-    "and for Linux users"
+    [:a {:href "http://www.java.com/en/download/help/windows_manual_download.xml"} " here "]
+    "and for Linux users "
     [:a {:href "http://www.java.com/en/download/help/linux_install.xml"} "here"]
     ". Apple distributes Java 6 with their system update tool."]
    [:br]
@@ -26,9 +27,8 @@
    [:div.terminal "~ $ java -version"]
    [:p "Make sure the version installed is 1.5 or greater."]]
 
-  [:div.section
-   [:img#bull3 {:align "right" :src "images/bulls/bull3.gif"}]
-   [:h1 "Install Leiningen"]
+  [:div#three.section
+   [:h1 "Running the Koans with Leiningen"]
 
    [:p "Now we're going to install Leiningen, Clojure's most popular dependency management tool. (It will install Clojure for us shortly.)"
     " If you have apt-get or homebrew, just run:"]
@@ -36,23 +36,41 @@
     [:em "your_package_manager_here"]
     " install leiningen"]
    [:p
-    " and you're done! Otherwise, download the Leiningen script"
+    " and you're done! Otherwise, download the Leiningen script "
     [:a {:href "#"} "here"]
-    "and  place it on your $PATH."]]
-
-  [:div.section
-   [:img#bull4 {:align "right" :src "images/bulls/bull4.gif"}]
-   [:h1 "Download the Koans"]
-
-   [:p "Clone the Clojure koans from "
-    [:a {:href "#"} "Github"]
-    "and enter it in a console. The following command will tell Leiningen to install Clojure and all other dependencies necessary to run the koans:"]
+    " and place it on your $PATH."]
+   [:br]
+   [:p "Next, clone the Clojure koans repository from "
+    [:a {:href "https://github.com/functional-koans/clojure-koans"} "Github"]
+    " and enter the koans directory in a console. The following command will tell Leiningen to install Clojure and all other dependencies necessary to run the koans:"]
    [:div.terminal "clojure-koans $ lein deps"]]
 
+  [:div#four.section
+
+   [:h1 "Running the Koans Standalone"]
+
+   [:p "If you don't want to use Leiningen to manage dependencies for you, you can still install the koans' dependencies manually."
+    " After downloading the koans repository with git as above, create a new folder called \"lib\" inside the project:"]
+
+   [:div.terminal "clojure-koans $ mkdir lib"]
+
+   [:p " You'll then need to place the following .jar files (unzipping when necessary) inside the lib directory:"]
+
+   [:ul#dependencies
+    [:li
+     [:a {:href "http://repo1.maven.org/maven2/org/clojure/clojure/1.3.0/clojure-1.3.0.zip"} "Clojure 1.3.0"]]
+    [:li
+     [:a {:href "http://sourceforge.net/projects/jline/files/jline/1.0/jline-1.0.zip/download"} "JLine 1.0"]]
+    [:li
+     [:a {:href "http://clojars.org/repo/koan-engine/koan-engine/0.1.2-SNAPSHOT/koan-engine-0.1.2-20111019.122151-1.jar"} "Koan Engine 1.2.0"]]
+    [:li
+     [:a {:href "http://clojars.org/repo/fresh/fresh/1.0.1/fresh-1.0.1.jar"} "Fresh 1.0.1"]]]
+
+   [:p "Now you should be ready to start."]]
 
 
-  [:div.section
-   [:img#bull5 {:align "right" :src "images/bulls/bull5.gif"}]
+  [:div#five.section
+
    [:h1 "Run the First Koan"]
 
    [:p "Once you're inside the koans diretory, you can immediately begin by running"]
@@ -71,15 +89,13 @@
     "(= __ true)"]
    [:p "The output is telling you that you have a failing test in equalities.clj. So open that file up in a text editor and try to make it pass!"]]
 
-  [:div.section
-   [:img#bull6 {:align "right" :src "images/bulls/bull6.gif"}]
+  [:div#six.section
    [:h1 "Repeat"]
 
    [:p " After you run and pass your first test, you'll find that the next one is failing. After all the tests in a file are passing, the"
-    "run script will automatically begin testing the next file in the koans sequence."]]
+    " run script will automatically begin testing the next file in the koans sequence."]]
 
-  [:div.section
-   [:img#bull7 {:align "right" :src "images/bulls/bull7.gif"}]
+  [:div#seven.section
    [:h1 "A Word on Testing"]
 
    [:p "The pattern of writing failing tests first and code to make them pass later is no mere novelty: it is"
@@ -90,36 +106,28 @@
    [:br]
    [:p "The koans, unlike tests in real test-driven projects, are already written for you. When you are"
     " ready to begin your own Clojure project and therefore your own tests, consider using a framework like"
-    " Speclj to aid you on your journey."]]
+    [:a {:href "http://http://speclj.com/"} " Speclj"]
+    " to aid you on your journey."]]
 
 
-  [:div.section
+  [:div#eight.section
    [:h1 "Contributors"]
 
    [:ul.contributors
-    [:li "Aaron Bedra"]
-    [:li "Colin Jones (maintainer)"]
-    [:li "Eric Lavigne"]
-    [:li "Nuno Marquez"]
-    [:li "Micah Martin"]
-    [:li "MIchael Kohl"]
-    [:li "Ben Lickly"]]
-   [:ul.contributors
-    [:li "Alex Robbins"]
-    [:li "Jaskirat Singh Veen"]
-    [:li "Mark Simpson"]
-    [:li "Mike Jansen"]
-    [:li "Caleb Phillips"]
-    [:li "Doug South"]]]
+    (doall (for [{name :name login :login} (get-contributors)]
+             [:li
+              [:a {:href (str "http://www.github.com/" login)} name]]))]]
 
-  [:div.section
-   [:img#bull8 {:align "right" :src "images/bulls/bull8.png"}]
-   [:h1 "Credits"]
-   [:p "These exercises were started by Aaron Bedra of Relevance, Inc. in early 2010, as a learning tool for newcomers"
-    " to functional programming. Aaron's macro-fu makes these koans extremely simple and fun to use, and to improve upon,"
-    " and without Relevance's initiative, this project would not exist."]
-   [:br]
-   [:p "Using the koans metaphor as a tool for learning a programming language started with the Ruby Koans by EdgeCase."]]]]
+  [:div#nine.section
+   [:h1 "Thanks"]
+
+   [:p "Using the koans metaphor as a tool for learning a programming language started with the "
+    [:a {:href "http://rubykoans.com/"} "Ruby Koans"]
+    " by "
+    [:a {:href "http://edgecase.com/"} "EdgeCase"]
+    ". This website was produced and hosted by "
+    [:a {:href "http://www.8thlight.com"} "8th Light"]
+    "."]]]]
 
 [:div#stripe
  [:img {:src "images/logo.png"}]

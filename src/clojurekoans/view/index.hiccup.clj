@@ -103,7 +103,7 @@
    [:ul.contributors
     (doall (for [{name :name login :login} (get-contributors)]
              [:li
-              [:a {:href (str "http://www.github.com/" login)} name]]))]]
+              [:a {:href (str "https://github.com/" login)} name]]))]]
 
   [:div#nine.section
    [:h1 "Thanks"]
@@ -112,7 +112,9 @@
     [:a {:href "http://rubykoans.com/"} "Ruby Koans"]
     " by "
     [:a {:href "http://edgecase.com/"} "EdgeCase"]
-    ". This website was produced and hosted by "
+    "; the Clojure koans themselves were started by developers at "
+    [:a {:href "http://thinkrelevance.com/"} "Relevance"]
+    ". This website is produced and hosted by "
     [:a {:href "http://www.8thlight.com"} "8th Light"]
     "."]]]
 

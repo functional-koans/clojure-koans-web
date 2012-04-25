@@ -45,15 +45,16 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+    color: #040;
+}
+
 p a {
 	font-weight: bold;
 }
 
 /*E96B42*/
 #outer-wrapper img {
-	position: absolute;
-	bottom: 10px;
-	right: 0;
 }
 
 #outer-wrapper {
@@ -122,6 +123,11 @@ p a {
 	background-image: url('../images/bg5.jpg');
 	overflow: auto;
 	z-index: 2;
+    top: 0;
+    
+zoom: 1;
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=1);
+    
 }
 
 #stripe ul {

@@ -30,7 +30,9 @@
   [:div#three.section
    [:h1 "The Koans with Leiningen"]
 
-   [:p "Now we're going to install Leiningen, Clojure's most popular dependency management tool. (It will install Clojure for us shortly.)"
+   [:p "If you'd like to jump into Clojure like the pros, you can install the koans with "
+    [:a {:href "https://github.com/technomancy/leiningen"} "Leiningen"]
+    ", Clojure's most popular dependency management tool. (It will install Clojure for us shortly.)"
     " If you have apt-get or homebrew, just run:"]
    [:div.terminal "~ $"
     [:em "your_package_manager_here"]
@@ -49,25 +51,10 @@
 
    [:h1 "The Koans Standalone"]
 
-   [:p "If you don't want to use Leiningen to manage dependencies for you, you can still install the koans' dependencies manually."
-    " After downloading the koans repository with git as above, create a new folder called \"lib\" inside the project:"]
-
-   [:div.terminal "clojure-koans $ mkdir lib"]
-
-   [:p " You'll then need to place the following .jar files (unzipping when necessary) inside the lib directory:"]
-
-   [:ul#dependencies
-    [:li
-     [:a {:href "http://repo1.maven.org/maven2/org/clojure/clojure/1.3.0/clojure-1.3.0.zip"} "Clojure 1.3.0"]]
-    [:li
-     [:a {:href "http://sourceforge.net/projects/jline/files/jline/1.0/jline-1.0.zip/download"} "JLine 1.0"]]
-    [:li
-     [:a {:href "http://clojars.org/repo/koan-engine/koan-engine/0.1.2-SNAPSHOT/koan-engine-0.1.2-20111019.122151-1.jar"} "Koan Engine 1.2.0"]]
-    [:li
-     [:a {:href "http://clojars.org/repo/fresh/fresh/1.0.1/fresh-1.0.1.jar"} "Fresh 1.0.1"]]]
-
-   [:p "Now you should be ready to start."]]
-
+   [:p "If you don't want to use Leiningen to manage dependencies for you, you can still easily install the koans manually."
+    " Just download and unzip the latest version"
+    [:a {:href "https://github.com/functional-koans/clojure-koans/downloads"} "here"]
+    ", and you should be ready to start."]]
 
   [:div#five.section
 
@@ -76,7 +63,7 @@
    [:p "Once you're inside the koans diretory, you can immediately begin by running"]
    [:div.terminal "clojure-koans $ script/run"]
    [:p "on Mac or Unix, or "]
-   [:div.terminal "clojure-koans $ script/run"]
+   [:div.terminal "clojure-koans $ script\\run"]
    [:p "on Windows. You'll probably see an error message like this:"]
    [:div.terminal " Problem in ~/clojure-koans/src/koans/equalities.clj"
     [:br]
@@ -127,7 +114,7 @@
     [:a {:href "http://edgecase.com/"} "EdgeCase"]
     ". This website was produced and hosted by "
     [:a {:href "http://www.8thlight.com"} "8th Light"]
-    "."]]]]
+    "."]]]
 
 [:div#stripe
  [:img {:src "images/logo.png"}]
@@ -149,4 +136,4 @@
   [:li
    [:a {:href "#"} "Contributors"]]
   [:li
-   [:a {:href "#"} "Thanks"]]]]
+   [:a {:href "#"} "Thanks"]]]]]

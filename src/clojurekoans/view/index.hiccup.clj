@@ -52,7 +52,7 @@
    [:h1 "The Koans Standalone"]
 
    [:p "If you don't want to use Leiningen to manage dependencies for you, you can still easily install the koans manually."
-    " Just download and unzip the latest version"
+    " Just download and unzip the latest version of the koans "
     [:a {:href "https://github.com/functional-koans/clojure-koans/downloads"} "here"]
     ", and you should be ready to start."]]
 

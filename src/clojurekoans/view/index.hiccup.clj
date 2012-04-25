@@ -28,7 +28,7 @@
    [:p "Make sure the version installed is 1.5 or greater."]]
 
   [:div#three.section
-   [:h1 "Running the Koans with Leiningen"]
+   [:h1 "The Koans with Leiningen"]
 
    [:p "Now we're going to install Leiningen, Clojure's most popular dependency management tool. (It will install Clojure for us shortly.)"
     " If you have apt-get or homebrew, just run:"]
@@ -47,7 +47,7 @@
 
   [:div#four.section
 
-   [:h1 "Running the Koans Standalone"]
+   [:h1 "The Koans Standalone"]
 
    [:p "If you don't want to use Leiningen to manage dependencies for you, you can still install the koans' dependencies manually."
     " After downloading the koans repository with git as above, create a new folder called \"lib\" inside the project:"]
@@ -137,9 +137,9 @@
   [:li
    [:a {:href "#"} "Install Java"]]
   [:li
-   [:a {:href "#"} "Install Leiningen"]]
+   [:a {:href "#"} "The Koans with Leiningen"]]
   [:li
-   [:a {:href "#"} "Download the Koans"]]
+   [:a {:href "#"} "The Koans Standalone"]]
   [:li
    [:a {:href "#"} "Run the First Koan"]]
   [:li
@@ -149,4 +149,4 @@
   [:li
    [:a {:href "#"} "Contributors"]]
   [:li
-   [:a {:href "#"} "Credits"]]]]
+   [:a {:href "#"} "Thanks"]]]]

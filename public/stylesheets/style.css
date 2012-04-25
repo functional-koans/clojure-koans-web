@@ -175,11 +175,13 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135,
 	display: inline-table;
 	vertical-align: top;
 	padding-right: 3em;
+    padding-bottom: 1em;
 }
 
 .contributors li {
         display: inline-block;
         width: 50%;
+        font-size: 1em;
 }
 
 #one {

@@ -103,7 +103,11 @@
    [:ul.contributors
     (doall (for [{name :name login :login} (get-contributors)]
              [:li
-              [:a {:href (str "https://github.com/" login)} name]]))]]
+              [:a {:href (str "https://github.com/" login)} name]]))]
+
+   [:p "If you have any questions or suggestions about the koans, feel free to contact "
+    [:a {:href "mailto:colin@8thlight.com"} "Colin Jones"]
+    ". Further contributions are always welcome."]]
 
   [:div#nine.section
    [:h1 "Thanks"]
@@ -116,11 +120,7 @@
     [:a {:href "http://thinkrelevance.com/"} "Relevance"]
     ". This website is produced and hosted by "
     [:a {:href "http://www.8thlight.com"} "8th Light"]
-    "."]]
-
-  [:p "If you have any questions or suggestions about the koans, feel free to contact "
-   [:a {:href} "Colin Jones"]
-   ". Further contributions are always welcome."]]
+    "."]]]
 
 [:div#stripe
  [:img {:src "images/logo.png"}]

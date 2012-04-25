@@ -1,5 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Rosarivo);
-@import url('./Optima.ttc');
+@font-face {
+    font-family: "Optima";
+    src: url(./Optima.ttc) format("truetype");
+}
 
 html, body {
 	width: 100%;

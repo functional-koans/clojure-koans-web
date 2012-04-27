@@ -4,7 +4,7 @@
   [:meta {:http-equiv "Content-Type" :content "text/html" :charset "iso-8859-1"}]
   [:title "Clojure Koans"]
 
-  "<--[if IE]>"
+  "<!--[if IE]>"
   (include-css "/stylesheets/iestyle.css")
   "<![endif]-->"
   (include-css "/stylesheets/style.css")

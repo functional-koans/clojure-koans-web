@@ -16,7 +16,7 @@
   [:div#two.section
    [:h1 "Install Java"]
 
-   [:p " Before we begin the koans, we need Clojure, and before we install Clojure, we'll need Java. You probably already have Java installed, but"
+   [:p " Before we begin the koans, we need Clojure, and before we install Clojure, we'll need Java. You probably already have Java installed, but "
     "if you don't, it's not difficult. Oracle provides installation instructions for Windows users"
     [:a {:href "http://www.java.com/en/download/help/windows_manual_download.xml"} " here "]
     "and for Linux users "

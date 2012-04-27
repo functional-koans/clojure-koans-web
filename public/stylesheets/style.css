@@ -1,7 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Rosarivo);
 @font-face {
-    font-family: "Optima";
-    src: url(./Optima.ttc) format("truetype");
+    font-family: 'Optima';
+    src: url('optima-webfont.eot');
+    src: url('optima-webfont.eot?#iefix') format('embedded-opentype'),
+         url('optima-webfont.woff') format('woff'),
+         url('optima-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 html, body {

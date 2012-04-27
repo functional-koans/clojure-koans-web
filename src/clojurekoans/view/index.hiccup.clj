@@ -39,7 +39,7 @@
     " install leiningen"]
    [:p
     " and you're done! Otherwise, download the Leiningen script "
-    [:a {:href "#"} "here"]
+    [:a {:href "https://raw.github.com/technomancy/leiningen/stable/bin/lein"} "here"]
     " and place it on your $PATH."]
    [:br]
    [:p "Next, clone the Clojure koans repository from "

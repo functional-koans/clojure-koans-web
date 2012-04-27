@@ -197,12 +197,6 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135,
 	background-position: 122% 530%;
 }
 
-@-moz-document url-prefix() {
-    #one{
-    	background-position: 122% 300%;
-	}
-}
-
 
 #two {
 	background-image: url('../images/bulls/bull2.png');
@@ -292,11 +286,4 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135,
 #bull8 {
 	right: 0 !important;
 	bottom: -80px !important;
-}
-
-
-@-moz-document url-prefix() {
-    #eight{
-    	background-position: 100% 30%;
-	}
 }

@@ -22,7 +22,7 @@ html, body {
 }
 
 body {
-	display: table;
+     display: block;
 }
 
 ul {
@@ -95,7 +95,7 @@ p a {
 	width: 331px;
 	z-index: 1;
 	background-image: url('../images/paper.jpg');
-	background-position: 0% 5%;	
+	background-position: 0% 5%;
 	top: 0;
 }
 
@@ -134,10 +134,10 @@ p a {
 	overflow: auto;
 	z-index: 2;
     top: 0;
-    
+
 zoom: 1;
-filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=1);
-    
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=235, Strength=1);
+
 }
 
 #stripe ul {
@@ -202,42 +202,42 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135,
 	background-image: url('../images/bulls/bull2.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-position: 100% 119%;	
+	background-position: 100% 119%;
 }
 
 #three {
 	background-image: url('../images/bulls/bull3.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-position: 90% 107%;	
+	background-position: 90% 107%;
 }
 
 #four {
 	background-image: url('../images/bulls/bull4.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-position: 100% 95%;	
+	background-position: 100% 95%;
 }
 
 #five {
 	background-image: url('../images/bulls/bull5.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-position: 100% 106%;	
+	background-position: 100% 106%;
 }
 
 #seven {
 	background-image: url('../images/bulls/bull6.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-position: 107% -8%;	
+	background-position: 107% -8%;
 }
 
 #eight {
 	background-image: url('../images/bulls/bull7.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-position: 100% 53%;	
+	background-position: 100% 53%;
 }
 
 
@@ -245,7 +245,7 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135,
 	background-image: url('../images/bulls/bull8.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background-position: 100% 128%;	
+	background-position: 100% 128%;
 }
 
 #bull1 {

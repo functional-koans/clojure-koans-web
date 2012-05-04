@@ -28,29 +28,15 @@
    [:p "Make sure the version installed is 1.5 or greater."]]
 
   [:div#three.section
-   [:h1 "The Koans with Leiningen"]
+   [:h1 "Install the Koans"]
 
    [:p "If you'd like to jump into Clojure like the pros, you can install the koans with "
     [:a {:href "https://github.com/technomancy/leiningen"} "Leiningen"]
     ", Clojure's most popular dependency management tool. (It will install Clojure for us shortly.)"
-    " If you have apt-get or homebrew, just run:"]
-   [:div.terminal "~ $"
-    [:em "your_package_manager_here"]
-    " install leiningen"]
-   [:p
-    " and you're done! Otherwise, download the Leiningen script "
-    [:a {:href "https://raw.github.com/technomancy/leiningen/stable/bin/lein"} "here"]
-    " and place it on your $PATH."]
+    " Follow the "
+    [:a {:href "https://github.com/technomancy/leiningen"} "installation instructions"]
+    "for Leiningen bliss."]
    [:br]
-   [:p "Next, clone the Clojure koans repository from "
-    [:a {:href "https://github.com/functional-koans/clojure-koans"} "Github"]
-    " and enter the koans directory in a console. The following command will tell Leiningen to install Clojure and all other dependencies necessary to run the koans:"]
-   [:div.terminal "clojure-koans $ lein deps"]]
-
-  [:div#four.section
-
-   [:h1 "The Koans Standalone"]
-
    [:p "If you don't want to use Leiningen to manage dependencies for you, you can still easily install the koans manually."
     " Just download and unzip the latest version of the koans "
     [:a {:href "https://github.com/functional-koans/clojure-koans/downloads"} "here"]
@@ -130,9 +116,7 @@
   [:li
    [:a {:href "#"} "Install Java"]]
   [:li
-   [:a {:href "#"} "The Koans with Leiningen"]]
-  [:li
-   [:a {:href "#"} "The Koans Standalone"]]
+   [:a {:href "#"} "Install the Koans"]]
   [:li
    [:a {:href "#"} "Run the First Koan"]]
   [:li

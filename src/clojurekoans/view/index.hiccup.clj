@@ -86,14 +86,20 @@
   [:div#eight.section
    [:h1 "Contributors"]
 
-   [:ul.contributors
-    (doall (for [{name :name login :login} (get-contributors)]
-             [:li
-              [:a {:href (str "https://github.com/" login)} name]]))]
+   (if-let [contributors (seq (get-contributors))]
+    [:ul.contributors
+      (doall (for [{name :name login :login} contributors]
+               [:li
+                [:a {:href (str "https://github.com/" login)} name]]))]
+    [:p 
+      [:a {:href "https://github.com/functional-koans/clojure-koans/graphs/contributors"} "Our Contributors"]
+      [:br]
+      [:br]])
 
-   [:p "If you have any questions or suggestions about the koans, feel free to contact "
-    [:a {:href "mailto:colin@8thlight.com"} "Colin Jones"]
-    ". Further contributions are always welcome."]]
+   [:p ""]
+   [:p "If you have any questions or suggestions about the koans, feel free to "
+    [:a {:href "https://github.com/functional-koans/clojure-koans/"} "open an issue or pull request"]
+    "."]]
 
   [:div#nine.section
    [:h1 "Thanks"]

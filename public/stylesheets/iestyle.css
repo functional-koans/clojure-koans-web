@@ -22,7 +22,7 @@ html, body {
 }
 
 body {
-     display: block;
+	width: 1000px;
 }
 
 ul {

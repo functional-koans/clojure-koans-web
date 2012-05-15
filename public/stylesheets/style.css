@@ -1,3 +1,31 @@
+/* Clojure Koans Site 
+ *
+ * By Colin Jones
+ * CSS Markup by Chris Peak 05/145/2012
+ *
+ * Scale 16 - 21, 28, 37, 50, 67, 89, 119, 159
+ * 265px Navigation/Left Banner, 629px Main text column, 35px Gutters
+ * 35+265+35+629+35 = 999px wide
+ *
+ *
+ * =G Globals
+ * =N Navigation
+ * =L Layout
+ * =MC Main Content
+ *
+ *
+ * Color Index 
+ * #e2dcd4 - Body Background Beige - to avoid white flicker prior to paper.jpg load
+ * #afb59b - 'Stripe' Navigation Banner Background Green - again to avoid flickr before image load
+ * #990000 - Link hover red (non-navigation links)
+ *
+ *
+ *
+ */
+
+
+
+/* Optima Body Font load */
 @import url(http://fonts.googleapis.com/css?family=Rosarivo);
 @font-face {
     font-family: 'Optima';
@@ -10,293 +38,219 @@
 
 }
 
+/* ---------------------- */
+
+
+
+
+/* ###### GLOBALS ###### */
+/* =G */
+
 html, body {
-	width: 100%;
-	height: 100%;
-	background-color: white;
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	font-family: 'Optima', Arial, sans-serif;
-	font-weight: lighter;
+  background-color: #e2dcd4;
+  font-size: 17px;
+  font-family: 'Optima', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	display: table;
+  background-image: url('../images/paper.jpg');
+  background-attachment: fixed;  
 }
 
 ul {
-	list-style-type: none;
-	padding: 0;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+  list-style-type: none;
+  padding: 0;
+
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 h1 {
-	font-family: 'Optima', Arial, sans-serif;
-	font-weight: lighter;
-	-webkit-margin-after: 0;
-	-webkit-margin-before: 0;
-	padding-bottom: 25px;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+  font-size: 50px;
+  font-family: 'Optima', Arial, sans-serif;
+  font-weight: lighter;
+  margin: 0;
+  padding-top: 20px;  
+  text-shadow: 0px -1px 1px #f3f3f3; 
 }
 
 p {
-	font-size: .8em;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
-	font-family: Rosarivo, Arial, Sans-serif;
+  font-family: Rosarivo, Arial, Sans-serif;
+  line-height: 1.9em; 
+  margin: .563em 0px;
+  padding: 0;
 }
 
-a {
-	color: black;
-	text-decoration: none;
+a { 
+  color: black; 
+  font-weight: bold; 
+  text-decoration: none; 
 }
 
-a:hover {
-    color: #040;
-}
+a:hover { color: #990000; }
 
-p a {
-	font-weight: bold;
-}
 
-/*E96B42*/
-#outer-wrapper img {
-}
 
+
+/* ------------------------- */
+
+
+
+/* ######## LAYOUT ########### */
+/* =L */
+
+/* Main Body */
 #outer-wrapper {
-	display: table-cell;
-	height: 100%;
-	width: 100%;
-	background-image: url('../images/paper.jpg');
-	background-attachment: fixed;
-	background-color: #FFF;
-	background-position: 0% 5%;
-	vertical-align: top;
-	padding-bottom: 3em;
+  margin: 0 auto;
+  overflow: hidden; 
+  width: 999px; /* Main site width */
 }
+
 
 .rounded_top {
-	width: 100%;
-	height: 10px;
-	/*background-color: grey;*/
-	/*border-top-right-radius: 5px;*/
-/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(50%,#fafafa), color-stop(51%,#f9f9f9), color-stop(100%,#fcfcfc)); /* Chrome,Safari4+ */*/
-/*-moz-box-shadow: 10px 10px 5px #888;*/
-
+  height: 10px;
+  width: 100%;
 }
 
-#cover {
-	position: fixed;
-	height: 100%;
-	width: 331px;
-	z-index: 1;
-	background-image: url('../images/paper.jpg');
-	background-position: 0% 5%;	
-	top: 0;
-}
 
+/* Body Text Column - Right container - holds body text*/
 #inner-wrapper {
-	width: 600px;
-	padding-top: 1em;
-	height: 95%;
-	/*width: 100%;*/
-	margin: 1em 0;$$$eio	`sau1J*71
-	width: 560px;
-	border-radius: 5px;
-	padding-left: 330px;
-	/*border: 1px solid black;*/
-	/*background-color: rgba(255, 255, 255, .6);*/
-	padding-right: 1.5em;
-	text-align: justify;
+  float: right; 
+  margin-right: 35px;
+  padding-top: 1em;
+  width: 629px;
 }
 
-#top {
-	font-size: 60px;
-	color: #595249;
-}
+#top { color: #595249; font-size: 60px; }
+
+
+
+
+
+
+/* ######### NAVIGATION ########## */
+/* =N */
 
 #stripe {
-	font-family: 'Rosarivo';
-	font-size: .8em;
-	position: fixed;
-	height: 100%;
-	width: 230px;
-	text-align: center;
-	left: 50px;
-	padding-top: 30px;
-	box-shadow: 0 0 7px black;
-	/*background-image: -webkit-linear-gradient(top, #B6D382 0%, #C9D1A4 100%);*/
-	background-image: url('../images/bg5.jpg');
-	overflow: auto;
-	z-index: 2;
-    top: 0;
-    
-zoom: 1;
-filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=1);
+  background-color: #afb59b;
+  background-image: url('../images/bg5.jpg');
+  height: 100%;
+  padding-top: 26px;
+  position: fixed;
+  margin: 0px 35px;
+  text-align: center;
+  width: 265px;
+      
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=1);
+  box-shadow: 0 0 7px black;
     
 }
 
-#stripe ul {
-	text-align: right;
-	padding-right: 1em;
-	padding-top: 1em;
+#stripe ul { padding: 26px; text-align: right; }
+
+#stripe a { 
+  display: block;
+  font-weight: normal; 
+  font-family: 'Optima', Arial, Sans-serif;
+  padding: .42em; 
+}
+#stripe a:hover {
+  background: rgba(255,255,255, .15);
+  border-radius: 2px; 
+  color: #990000;
 }
 
-#stripe li {
-	padding-bottom: .5em;
-}
 
-#stripe a {
-	font-family: 'Optima', Arial, Sans-serif;
-}
 
+/* ########### MAIN CONTENT ############## */
+/* =MC */
+
+/* Individual 'posts' */
 .section {
-	position: relative;
-	padding-bottom: 80px;
+  border-bottom: 1px dashed #d0c7bb;
+  padding:  30px 10px 109px;
+  position: relative;
+  text-align: justify; 
 }
 
 .terminal {
-	background-color: black;
-	font-family: 'Courier', arial, sans-serif;
-	color: white;
-	padding: .5em;
-	font-size: .8em;
-	margin: 1em 0em;
+  background-color: black;
+  color: white;
+  font-family: 'Courier', arial, sans-serif;
+  font-size: .8em;
+  margin: 1em 0em;
+  padding: 1em;
 }
 
-.grey {
-	color: grey;
-}
-
-#dependencies {
-	padding: 1em 0;
-	font-size: .8em;
-}
 
 .contributors {
-	display: inline-table;
-	vertical-align: top;
-	padding-right: 3em;
-    padding-bottom: 1em;
+  margin: 0 auto;
+  padding: 2em .5em;
+  width: 350px; 
 }
 
 .contributors li {
-        display: inline-block;
-        width: 50%;
-        font-size: 1em;
+  display: inline-block;
+  font-size: 1em;
+  width: 48%;
+
 }
 
+
+
+
+/* ######### BULL Background Images ######## */
 #one {
-	background-image: url('../images/bulls/bull11.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-position: 122% 530%;
-}
-
-@-moz-document url-prefix() {
-    #one{
-    	background-position: 122% 300%;
-	}
+  background-image: url('../images/bulls/bull11.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position: 92% 120%;
 }
 
 
 #two {
-	background-image: url('../images/bulls/bull2.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-position: 100% 119%;	
+  background-image: url('../images/bulls/bull2.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position: 100% 95%;	
 }
 
 #three {
-	background-image: url('../images/bulls/bull3.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-position: 90% 107%;	
+  background-image: url('../images/bulls/bull3.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position: 90% 87%;	
 }
 
-#four {
-	background-image: url('../images/bulls/bull4.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-position: 100% 95%;	
-}
-
-#five {
-	background-image: url('../images/bulls/bull5.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-position: 100% 106%;	
+#five { /* Actually number 4 on the page */
+  background-image: url('../images/bulls/bull5.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position: 100% 90%;	
 }
 
 #seven {
-	background-image: url('../images/bulls/bull6.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-position: 107% -8%;	
+  background-image: url('../images/bulls/bull6.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position: 100% 60%;	
 }
 
 #eight {
-	background-image: url('../images/bulls/bull7.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-position: 100% 53%;	
+  background-image: url('../images/bulls/bull7.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position: 100% 38%;	
 }
 
 
 #nine {
-	background-image: url('../images/bulls/bull8.png');
-	background-repeat: no-repeat;
-	background-position: right bottom;
-	background-position: 100% 128%;	
+  background-image: url('../images/bulls/bull8.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-position: 100% 68%;	
 }
 
-#bull1 {
-	right: 0 !important;
-	bottom: -100px !important;
-}
-
-#bull2 {
-	right: 0 !important;
-	bottom: -40px !important;
-}
-
-#bull3 {
-	right: 40px !important;
-	bottom: -40px !important;
-}
-
-#bull4 {
-	right: 0 !important;
-	bottom: -150px !important;
-}
-
-#bull5 {
-	right: 0 !important;
-	bottom: -50px !important;
-}
-
-#bull6 {
-	right: 20px !important;
-	bottom: -150px !important;
-}
-
-#bull7 {
-	right: 0 !important;
-	bottom: -250px !important;
-}
-
-#bull8 {
-	right: 0 !important;
-	bottom: -80px !important;
-}
-
-
-@-moz-document url-prefix() {
-    #eight{
-    	background-position: 100% 30%;
-	}
-}

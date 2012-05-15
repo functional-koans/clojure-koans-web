@@ -6,5 +6,5 @@
   :dev-dependencies [[speclj "1.4.0"]]
   :test-path "spec/"
   :java-source-path "src/"
-  :repl-init-script "config/development/repl_init.clj"
+  ;:repl-init-script "config/development/repl_init.clj"
   :joodo-core-namespace clojurekoans.core)

@@ -1,9 +1,10 @@
-/* Clojure Koans Site 
- *
- * By Colin Jones
- * CSS Markup by Chris Peak 05/145/2012
+/* Clojure Koans Site by 8th Light
  *
  * Scale 16 - 21, 28, 37, 50, 67, 89, 119, 159
+1
+1.3125
+1.75
+2.3125
  * 265px Navigation/Left Banner, 629px Main text column, 35px Gutters
  * 35+265+35+629+35 = 999px wide
  *
@@ -48,7 +49,8 @@
 
 html, body {
   background-color: #e2dcd4;
-  font-size: 17px;
+  font-size: 16px;
+	color: #2a1807;
   font-family: 'Optima', Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -62,36 +64,34 @@ body {
 ul {
   list-style-type: none;
   padding: 0;
-
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 2.3125em;
   font-family: 'Optima', Arial, sans-serif;
   font-weight: lighter;
   margin: 0;
-  padding-top: 20px;  
   text-shadow: 0px -1px 1px #f3f3f3; 
 }
 
 p {
   font-family: Rosarivo, Arial, Sans-serif;
-  line-height: 1.9em; 
-  margin: .563em 0px;
+	font-size: 1em;
+  line-height: 1.75em;
   padding: 0;
 }
 
 a { 
-  color: black; 
+  color: #b04d22;
   font-weight: bold; 
   text-decoration: none; 
 }
 
-a:hover { color: #990000; }
-
-
+a:hover {
+	color: #e95d3d;
+}
 
 
 /* ------------------------- */
@@ -108,12 +108,10 @@ a:hover { color: #990000; }
   width: 999px; /* Main site width */
 }
 
-
 .rounded_top {
   height: 10px;
   width: 100%;
 }
-
 
 /* Body Text Column - Right container - holds body text*/
 #inner-wrapper {
@@ -145,22 +143,26 @@ a:hover { color: #990000; }
       
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=1);
-  box-shadow: 0 0 7px black;
-    
+  box-shadow: 0 0 7px black;    
 }
 
-#stripe ul { padding: 26px; text-align: right; }
+#stripe ul {
+	padding: 26px;
+	text-align: left;
+}
 
 #stripe a { 
+	color: #2a1807;
   display: block;
   font-weight: normal; 
-  font-family: 'Optima', Arial, Sans-serif;
-  padding: .42em; 
+  font-family: Rosarivo, Arial, Sans-serif;
+  padding: .42em;
+  border-bottom: 1px dashed #e0d5c7;
 }
 #stripe a:hover {
-  background: rgba(255,255,255, .15);
+  background: rgba(255,255,255, .25);
   border-radius: 2px; 
-  color: #990000;
+	color: #e95d3d;
 }
 
 
@@ -173,15 +175,16 @@ a:hover { color: #990000; }
   border-bottom: 1px dashed #d0c7bb;
   padding:  30px 10px 109px;
   position: relative;
-  text-align: justify; 
+  text-align: justify;
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .terminal {
   background-color: black;
   color: white;
   font-family: 'Courier', arial, sans-serif;
-  font-size: .8em;
-  margin: 1em 0em;
+  font-size: 0.85em;
   padding: 1em;
 }
 
@@ -203,54 +206,40 @@ a:hover { color: #990000; }
 
 
 /* ######### BULL Background Images ######## */
+
 #one {
   background-image: url('../images/bulls/bull11.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
   background-position: 92% 120%;
 }
 
 
 #two {
   background-image: url('../images/bulls/bull2.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
   background-position: 100% 95%;	
 }
 
 #three {
   background-image: url('../images/bulls/bull3.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
   background-position: 90% 87%;	
 }
 
 #five { /* Actually number 4 on the page */
   background-image: url('../images/bulls/bull5.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
   background-position: 100% 90%;	
 }
 
 #seven {
   background-image: url('../images/bulls/bull6.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
   background-position: 100% 60%;	
 }
 
 #eight {
   background-image: url('../images/bulls/bull7.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
   background-position: 100% 38%;	
 }
 
 
 #nine {
   background-image: url('../images/bulls/bull8.png');
-  background-repeat: no-repeat;
-  background-position: right bottom;
   background-position: 100% 68%;	
 }
-

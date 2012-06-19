@@ -1,4 +1,3 @@
-
 [:div {:id "outer-wrapper"}
  [:div#cover]
  [:div#inner-wrapper
@@ -22,7 +21,6 @@
     "and for Linux users "
     [:a {:href "http://www.java.com/en/download/help/linux_install.xml"} "here"]
     ". Apple distributes Java 6 with their system update tool."]
-   [:br]
    [:p "After downloading Java (if necessary), go to your console and enter:"]
    [:div.terminal "~ $ java -version"]
    [:p "Make sure the version installed is 1.5 or greater."]]
@@ -36,7 +34,6 @@
     " Follow the "
     [:a {:href "https://github.com/technomancy/leiningen"} "installation instructions"]
     " for Leiningen bliss."]
-   [:br]
    [:p "If you don't want to use Leiningen to manage dependencies for you, you can still easily install the koans manually."
     " Just download and unzip the latest version of the koans "
     [:a {:href "https://github.com/functional-koans/clojure-koans/downloads"} "here"]
@@ -76,7 +73,6 @@
     " be the simplest and most natural extension of those that come before it, so as to cover only one new part"
     " of the code. They also enjoin disciples to meditate on their progress regularly: after a test is made"
     " to pass, one should pause to refactor and refine one's code before moving on to the next test."]
-   [:br]
    [:p "The koans, unlike tests in real test-driven projects, are already written for you. When you are"
     " ready to begin your own Clojure project and therefore your own tests, consider using a framework like"
     [:a {:href "http://http://speclj.com/"} " Speclj"]
@@ -91,12 +87,8 @@
       (doall (for [{name :name login :login} contributors]
                [:li
                 [:a {:href (str "https://github.com/" login)} name]]))]
-    [:p 
-      [:a {:href "https://github.com/functional-koans/clojure-koans/graphs/contributors"} "Our Contributors"]
-      [:br]
-      [:br]])
+   [:p [:a {:href "https://github.com/functional-koans/clojure-koans/graphs/contributors"} "Our Contributors"]])
 
-   [:p ""]
    [:p "If you have any questions or suggestions about the koans, feel free to "
     [:a {:href "https://github.com/functional-koans/clojure-koans/"} "open an issue or pull request"]
     "."]]
@@ -120,13 +112,13 @@
   [:li
    [:a {:href "#"} "Introduction"]]
   [:li
-   [:a {:href "#"} "Install Java"]]
+   [:a {:href "#"} "1. Install Java"]]
   [:li
-   [:a {:href "#"} "Install the Koans"]]
+   [:a {:href "#"} "2. Install the Koans"]]
   [:li
-   [:a {:href "#"} "Run the First Koan"]]
+   [:a {:href "#"} "3. Run the First Koan"]]
   [:li
-   [:a {:href "#"} "Repeat"]]
+   [:a {:href "#"} "4. Repeat"]]
   [:li
    [:a {:href "#"} "A Word on Testing"]]
   [:li

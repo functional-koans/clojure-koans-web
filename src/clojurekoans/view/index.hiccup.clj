@@ -104,6 +104,8 @@
     [:a {:href "http://thinkrelevance.com/"} "Relevance"]
     ". This website is produced and hosted by "
     [:a {:href "http://www.8thlight.com"} "8th Light"]
+    " and powered by "
+    [:a {:href "http://www.joodoweb.com"} "Joodo"]
     "."]]]
 
 [:div#stripe

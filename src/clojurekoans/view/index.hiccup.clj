@@ -16,11 +16,9 @@
    [:h1 "Install Java"]
 
    [:p " Before we begin the koans, we need Clojure, and before we install Clojure, we'll need Java. You probably already have Java installed, but "
-    "if you don't, it's not difficult. Oracle provides installation instructions for Windows users"
-    [:a {:href "http://www.java.com/en/download/help/windows_manual_download.xml"} " here "]
-    "and for Linux users "
-    [:a {:href "http://www.java.com/en/download/help/linux_install.xml"} "here"]
-    ". Apple distributes Java 6 with their system update tool."]
+    "if you don't, it's not difficult. Oracle provides "
+    [:a {:href "http://www.java.com/en/download/help/windows_manual_download.xml"} "installation instructions for Windows users"]
+    ", and Linux users should use their package manager of choice. Apple distributes Java 6 with their system update tool."]
    [:p "After downloading Java (if necessary), go to your console and enter:"]
    [:div.terminal "~ $ java -version"]
    [:p "Make sure the version installed is 1.5 or greater."]]
@@ -29,7 +27,7 @@
    [:h1 "Install the Koans"]
 
    [:p "If you'd like to jump into Clojure like the pros, you can install the koans with "
-    [:a {:href "https://github.com/technomancy/leiningen"} "Leiningen"]
+    [:a {:href "http://leiningen.org"} "Leiningen"]
     ", Clojure's most popular dependency management tool. (It will install Clojure for us shortly.)"
     " Follow the "
     [:a {:href "http://leiningen.org/#install"} "installation instructions"]

@@ -32,7 +32,7 @@
     [:a {:href "https://github.com/technomancy/leiningen"} "Leiningen"]
     ", Clojure's most popular dependency management tool. (It will install Clojure for us shortly.)"
     " Follow the "
-    [:a {:href "https://github.com/technomancy/leiningen"} "installation instructions"]
+    [:a {:href "http://leiningen.org/#install"} "installation instructions"]
     " for Leiningen bliss."]
    [:p "If you don't want to use Leiningen to manage dependencies for you, you can still easily install the koans manually."
     " Just download and unzip the latest version of the koans "

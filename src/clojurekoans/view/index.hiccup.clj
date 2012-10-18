@@ -5,7 +5,7 @@
 
    [:h1 "Introduction"]
 
-   [:p "Clojure koans are exercised meant to initiate you to the mysteries of the "
+   [:p "Clojure koans are exercises meant to initiate you to the mysteries of the "
     [:a {:href "http://www.clojure.org"} "Clojure language"]
     ". By following along the path set before you, you will touch on all"
     " the major aspects of the language, from simple datatypes to macros, from tail recursion to Java interoperability. Many will find Clojure quite different"

@@ -73,7 +73,7 @@
     " to pass, one should pause to refactor and refine one's code before moving on to the next test."]
    [:p "The koans, unlike tests in real test-driven projects, are already written for you. When you are"
     " ready to begin your own Clojure project and therefore your own tests, consider using a framework like"
-    [:a {:href "http://http://speclj.com/"} " Speclj"]
+    [:a {:href "http://speclj.com/"} " Speclj"]
     " to aid you on your journey."]]
 
 

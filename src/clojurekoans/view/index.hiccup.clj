@@ -45,7 +45,9 @@
    [:div.terminal "clojure-koans $ script/run"]
    [:p "on Mac or Unix, or "]
    [:div.terminal "clojure-koans $ script\\run"]
-   [:p "on Windows. You'll probably see an error message like this:"]
+   [:p "on Windows. If you're using leiningen, you'll want to run"]
+   [:div.terminal "clojure-koans $ lein koan run"]
+   [:p " instead. You'll probably see an error message like this:"]
    [:div.terminal " Problem in ~/clojure-koans/src/koans/equalities.clj"
     [:br]
     "---------------------"

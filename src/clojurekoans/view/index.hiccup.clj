@@ -31,9 +31,18 @@
     ", Clojure's most popular dependency management tool. (It will install Clojure for us shortly.)"
     " Follow the "
     [:a {:href "http://leiningen.org/#install"} "installation instructions"]
-    " for Leiningen bliss."]
-   [:p "If you don't want to use Leiningen to manage dependencies for you, you can still easily install the koans manually."
-    " Just download and unzip the latest version of the koans "
+    " for Leiningen bliss. "]
+
+   [:p "Important: if you already have lein 1.x installed, you'll need to "
+    [:a {:href "https://github.com/technomancy/leiningen/wiki/Upgrading"} "upgrade to Leiningen 2"]
+    "."]
+   [:p "Once you have Leiningen installed, you just need to clone the koans repo:"]
+   [:div.terminal "$ git clone git://github.com/functional-koans/clojure-koans.git"]
+   [:p "If you don't want to use Leiningen to manage dependencies for you, you
+       can still easily install the koans manually. [Note: this option will only
+       work until "
+    [:a {:href "https://github.com/blog/1302-goodbye-uploads"} "Github shuts down the Downloads feature completely"]
+    " in March 2012.] Just download and unzip the latest version of the koans "
     [:a {:href "https://github.com/functional-koans/clojure-koans/downloads"} "here"]
     ", and you should be ready to start."]]
 
@@ -41,12 +50,15 @@
 
    [:h1 "Run the First Koan"]
 
-   [:p "Once you're inside the koans diretory, you can immediately begin by running"]
-   [:div.terminal "clojure-koans $ script/run"]
+   [:p "Once you're inside the koans directory, you can immediately begin by running"]
+   [:div.terminal "$ lein koan run"]
+   [:p "if you have Leiningen installed as described above."]
+   [:p "(Don't forget to cd into the clojure-koans directory after you've cloned the repo!)"]
+   [:p "Or, if you're not using Leiningen, you can use"]
+   [:div.terminal "$ script/run"]
    [:p "on Mac or Unix, or "]
-   [:div.terminal "clojure-koans $ script\\run"]
-   [:p "on Windows. If you're using leiningen, you'll want to run"]
-   [:div.terminal "clojure-koans $ lein koan run"]
+   [:div.terminal "$ script\\run"]
+   [:p "on Windows. "]
    [:p " instead. You'll probably see an error message like this:"]
    [:div.terminal " Problem in ~/clojure-koans/src/koans/equalities.clj"
     [:br]

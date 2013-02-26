@@ -42,7 +42,7 @@
        can still easily install the koans manually. [Note: this option will only
        work until "
     [:a {:href "https://github.com/blog/1302-goodbye-uploads"} "Github shuts down the Downloads feature completely"]
-    " in March 2012.] Just download and unzip the latest version of the koans "
+    " in March 2013.] Just download and unzip the latest version of the koans "
     [:a {:href "https://github.com/functional-koans/clojure-koans/downloads"} "here"]
     ", and you should be ready to start."]]
 

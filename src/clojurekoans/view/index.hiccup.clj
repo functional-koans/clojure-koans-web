@@ -60,7 +60,7 @@
    [:div.terminal "$ script\\run"]
    [:p "on Windows. "]
    [:p " instead. You'll probably see an error message like this:"]
-   [:div.terminal " Problem in ~/clojure-koans/src/koans/equalities.clj"
+   [:div.terminal " Now meditate on ~/clojure-koans/src/koans/01_equalities.clj:3"
     [:br]
     "---------------------"
     [:br]
@@ -69,7 +69,9 @@
     "We shall contemplate truth by testing reality, via equality."
     [:br]
     "(= __ true)"]
-   [:p "The output is telling you that you have a failing test in equalities.clj. So open that file up in a text editor and try to make it pass!"]]
+   [:p "The output is telling you that you have a failing test in the file
+       01_equalities.clj, on line 3. So open that file up in a text editor and
+       make it pass by filling in the blanks!"]]
 
   [:div#six.section
    [:h1 "Repeat"]

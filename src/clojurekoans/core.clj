@@ -9,10 +9,13 @@
 (defroutes clojurekoans-routes
   (GET "/" [] (render-template "index"))
   (controller-router 'clojurekoans.controller)
-  (not-found (render-template "not_found" :template-root "clojurekoans/view" :ns `clojurekoans.view.view-helpers)))
+  (not-found (render-template "not_found"
+                              :template-root "clojurekoans/view"
+                              :ns `clojurekoans.view.view-helpers)))
 
 (def app-handler
   (->
     clojurekoans-routes
-    (wrap-view-context :template-root "clojurekoans/view" :ns `clojurekoans.view.view-helpers)))
+    (wrap-view-context :template-root "clojurekoans/view"
+                       :ns `clojurekoans.view.view-helpers)))
 

@@ -15,7 +15,7 @@
  * =MC Main Content
  *
  *
- * Color Index 
+ * Color Index
  * #e2dcd4 - Body Background Beige - to avoid white flicker prior to paper.jpg load
  * #afb59b - 'Stripe' Navigation Banner Background Green - again to avoid flickr before image load
  * #990000 - Link hover red (non-navigation links)
@@ -49,16 +49,13 @@
 
 html, body {
   background-color: #e2dcd4;
+  background: url('../images/paper.jpg');
+  background-attachment: fixed;
   font-size: 16px;
 	color: #2a1807;
   font-family: 'Optima', Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-image: url('../images/paper.jpg');
-  background-attachment: fixed;  
 }
 
 ul {
@@ -73,7 +70,7 @@ h1 {
   font-family: 'Optima', Arial, sans-serif;
   font-weight: lighter;
   margin: 0;
-  text-shadow: 0px -1px 1px #f3f3f3; 
+  text-shadow: 0px -1px 1px #f3f3f3;
 }
 
 p {
@@ -83,10 +80,10 @@ p {
   padding: 0;
 }
 
-a { 
+a {
   color: #b04d22;
-  font-weight: bold; 
-  text-decoration: none; 
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
@@ -104,8 +101,9 @@ a:hover {
 /* Main Body */
 #outer-wrapper {
   margin: 0 auto;
-  overflow: hidden; 
+  overflow: hidden;
   width: 999px; /* Main site width */
+  position: relative;
 }
 
 .rounded_top {
@@ -115,15 +113,15 @@ a:hover {
 
 /* Body Text Column - Right container - holds body text*/
 #inner-wrapper {
-  float: right; 
   margin-right: 35px;
   padding-top: 1em;
   width: 629px;
+  float: left;
 }
 
 #top { color: #595249; font-size: 60px; }
 
-
+.clearfix { clear: both; }
 
 
 
@@ -131,19 +129,22 @@ a:hover {
 /* ######### NAVIGATION ########## */
 /* =N */
 
+#stripe-wrapper {
+}
+
 #stripe {
   background-color: #afb59b;
   background-image: url('../images/bg5.jpg');
   height: 100%;
   padding-top: 26px;
-  position: fixed;
+  float: left;
   margin: 0px 35px;
   text-align: center;
   width: 265px;
-      
+
   zoom: 1;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=1);
-  box-shadow: 0 0 7px black;    
+  box-shadow: 0 0 7px black;
 }
 
 #stripe ul {
@@ -151,17 +152,17 @@ a:hover {
 	text-align: left;
 }
 
-#stripe a { 
+#stripe a {
 	color: #2a1807;
   display: block;
-  font-weight: normal; 
+  font-weight: normal;
   font-family: Rosarivo, Arial, Sans-serif;
   padding: .42em;
   border-bottom: 1px dashed #e0d5c7;
 }
 #stripe a:hover {
   background: rgba(255,255,255, .25);
-  border-radius: 2px; 
+  border-radius: 2px;
 	color: #e95d3d;
 }
 
@@ -192,7 +193,7 @@ a:hover {
 .contributors {
   margin: 0 auto;
   padding: 2em .5em;
-  width: 350px; 
+  width: 350px;
 }
 
 .contributors li {
@@ -215,31 +216,31 @@ a:hover {
 
 #two {
   background-image: url('../images/bulls/bull2.png');
-  background-position: 100% 95%;	
+  background-position: 100% 95%;
 }
 
 #three {
   background-image: url('../images/bulls/bull3.png');
-  background-position: 90% 87%;	
+  background-position: 90% 87%;
 }
 
 #five { /* Actually number 4 on the page */
   background-image: url('../images/bulls/bull5.png');
-  background-position: 100% 90%;	
+  background-position: 100% 90%;
 }
 
 #seven {
   background-image: url('../images/bulls/bull6.png');
-  background-position: 100% 60%;	
+  background-position: 100% 60%;
 }
 
 #eight {
   background-image: url('../images/bulls/bull7.png');
-  background-position: 100% 38%;	
+  background-position: 100% 38%;
 }
 
 
 #nine {
   background-image: url('../images/bulls/bull8.png');
-  background-position: 100% 68%;	
+  background-position: 100% 68%;
 }

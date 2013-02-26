@@ -1,5 +1,24 @@
-[:div {:id "outer-wrapper"}
- [:div#cover]
+[:div#outer-wrapper
+ [:div#stripe
+  [:img {:src "images/logo.png"}]
+  [:ul
+   [:li
+    [:a {:href "#"} "Introduction"]]
+   [:li
+    [:a {:href "#"} "1. Install Java"]]
+   [:li
+    [:a {:href "#"} "2. Install the Koans"]]
+   [:li
+    [:a {:href "#"} "3. Run the First Koan"]]
+   [:li
+    [:a {:href "#"} "4. Repeat"]]
+   [:li
+    [:a {:href "#"} "A Word on Testing"]]
+   [:li
+    [:a {:href "#"} "Contributors"]]
+   [:li
+    [:a {:href "#"} "Thanks"]]]]
+
  [:div#inner-wrapper
   [:div#one.section
 
@@ -96,12 +115,7 @@
   [:div#eight.section
    [:h1 "Contributors"]
 
-   (if-let [contributors (seq (get-contributors))]
-    [:ul.contributors
-      (doall (for [{name :name login :login} contributors]
-               [:li
-                [:a {:href (str "https://github.com/" login)} name]]))]
-   [:p [:a {:href "https://github.com/functional-koans/clojure-koans/graphs/contributors"} "Our Contributors"]])
+   [:p [:a {:href "https://github.com/functional-koans/clojure-koans/graphs/contributors"} "Our Contributors"]]
 
    [:p "If you have any questions or suggestions about the koans, feel free to "
     [:a {:href "https://github.com/functional-koans/clojure-koans/"} "open an issue or pull request"]
@@ -121,23 +135,4 @@
     " and powered by "
     [:a {:href "http://www.joodoweb.com"} "Joodo"]
     "."]]]
-
-[:div#stripe
- [:img {:src "images/logo.png"}]
- [:ul
-  [:li
-   [:a {:href "#"} "Introduction"]]
-  [:li
-   [:a {:href "#"} "1. Install Java"]]
-  [:li
-   [:a {:href "#"} "2. Install the Koans"]]
-  [:li
-   [:a {:href "#"} "3. Run the First Koan"]]
-  [:li
-   [:a {:href "#"} "4. Repeat"]]
-  [:li
-   [:a {:href "#"} "A Word on Testing"]]
-  [:li
-   [:a {:href "#"} "Contributors"]]
-  [:li
-   [:a {:href "#"} "Thanks"]]]]]
+[:div.clearfix]]

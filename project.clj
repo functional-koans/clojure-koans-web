@@ -1,5 +1,5 @@
 (defproject clojurekoans "0.0.1"
-  :description "A website deployable to AppEngine"
+  :description "Clojure Koans website"
   :dependencies [[org.clojure/clojure "1.2.1"]
                  [joodo "0.6.0-SNAPSHOT"]
                  [org.clojure/data.json "0.1.2"]]

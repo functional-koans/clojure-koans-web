@@ -115,6 +115,7 @@ a:hover {
 #inner-wrapper {
   margin-right: 35px;
   padding-top: 1em;
+  padding-left: 335px;
   width: 629px;
   float: left;
 }
@@ -135,7 +136,8 @@ a:hover {
 #stripe {
   background-color: #afb59b;
   background-image: url('../images/bg5.jpg');
-  height: 100%;
+  position: fixed;
+  height: auto;
   padding-top: 26px;
   float: left;
   margin: 0px 35px;

@@ -1,6 +1,6 @@
 [:div#outer-wrapper
- [:div#stripe
-  [:img {:src "images/logo.png"}]
+ [:div#stripe.navbar.navbar-defaul {:role "navigation"}
+  [:div#logo]
   [:ul
    [:li
     [:a {:href "#"} "Introduction"]]

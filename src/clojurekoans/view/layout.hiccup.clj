@@ -4,7 +4,9 @@
   [:meta {:http-equiv "Content-Type" :content "text/html" :charset "iso-8859-1"}]
   [:title "Clojure Koans"]
 
+  (include-css "/stylesheets/bootstrap-theme.min.css")
   (include-css "/stylesheets/style.css")
+
   "<!--[if IE]>"
   (include-css "/stylesheets/iestyle.css")
   "<![endif]-->"

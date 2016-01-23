@@ -1,7 +1,7 @@
 [:div#outer-wrapper
- [:div#stripe.navbar.navbar-defaul {:role "navigation"}
+ [:div#stripe
   [:div#logo]
-  [:ul
+  [:ul#nav
    [:li
     [:a {:href "#"} "Introduction"]]
    [:li

@@ -123,7 +123,11 @@ a:hover {
 
 .clearfix { clear: both; }
 
-
+@media (min-height: 580px) {
+  #inner-wrapper {
+    padding-left: 335px;
+  }
+}
 
 
 /* ######### NAVIGATION ########## */
@@ -135,7 +139,8 @@ a:hover {
 #stripe {
   background-color: #afb59b;
   background-image: url('../images/bg5.jpg');
-  height: 100%;
+  position: fixed;
+  height: auto;
   padding-top: 26px;
   float: left;
   margin: 0px 35px;
@@ -148,24 +153,31 @@ a:hover {
 }
 
 #stripe ul {
-	padding: 26px;
-	text-align: left;
+  padding: 26px;
+  text-align: left;
 }
 
 #stripe a {
-	color: #2a1807;
+  color: #2a1807;
   display: block;
   font-weight: normal;
   font-family: Rosarivo, Arial, Sans-serif;
   padding: .42em;
   border-bottom: 1px dashed #e0d5c7;
 }
+
 #stripe a:hover {
   background: rgba(255,255,255, .25);
   border-radius: 2px;
-	color: #e95d3d;
+  color: #e95d3d;
 }
 
+@media (min-height: 580px) {
+  #stripe {
+    position: fixed;
+    height: auto;
+  }
+}
 
 
 /* ########### MAIN CONTENT ############## */

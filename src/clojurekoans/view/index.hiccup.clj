@@ -1,7 +1,7 @@
 [:div#outer-wrapper
  [:div#stripe
-  [:img {:src "images/logo.png"}]
-  [:ul
+  [:div#logo]
+  [:ul#nav
    [:li
     [:a {:href "#"} "Introduction"]]
    [:li

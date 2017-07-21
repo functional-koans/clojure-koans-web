@@ -13,6 +13,7 @@
  * =N Navigation
  * =L Layout
  * =MC Main Content
+ * =R Responsive
  *
  *
  * Color Index
@@ -113,10 +114,10 @@ a:hover {
 
 /* Body Text Column - Right container - holds body text*/
 #inner-wrapper {
+  margin-left: 335px;
   margin-right: 35px;
   padding-top: 1em;
   width: 629px;
-  float: left;
 }
 
 #top { color: #595249; font-size: 60px; }
@@ -129,22 +130,16 @@ a:hover {
 /* ######### NAVIGATION ########## */
 /* =N */
 
-#stripe-wrapper {
-}
-
 #stripe {
   background-color: #afb59b;
   background-image: url('../images/bg5.jpg');
-  height: 100%;
   padding-top: 26px;
-  float: left;
+  position: fixed;
   margin: 0px 35px;
   text-align: center;
   width: 265px;
-
-  zoom: 1;
   filter: progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=135, Strength=1);
-  box-shadow: 0 0 7px black;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 #stripe ul {
@@ -164,6 +159,15 @@ a:hover {
   background: rgba(255,255,255, .25);
   border-radius: 2px;
 	color: #e95d3d;
+}
+
+#logo {
+  background-size: contain;
+  width: calc(100% - 40px);
+  height: 200px;
+  margin: 0 20px;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
 }
 
 
@@ -189,7 +193,6 @@ a:hover {
   padding: 1em;
 }
 
-
 .contributors {
   margin: 0 auto;
   padding: 2em .5em;
@@ -200,7 +203,6 @@ a:hover {
   display: inline-block;
   font-size: 1em;
   width: 48%;
-
 }
 
 
@@ -243,4 +245,66 @@ a:hover {
 #nine {
   background-image: url('../images/bulls/bull8.png');
   background-position: 100% 68%;
+}
+
+
+
+/* ###### RESPONSIVE ###### */
+/* =R */
+
+@media only screen and (max-width: 980px) {
+  #outer-wrapper {
+    width: 800px;
+  }
+  #inner-wrapper {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #stripe {
+    width: 100%;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+  }
+  #logo {
+    width: auto;
+    height: 60px;
+    background-image: url(../images/logo-responsive.png);
+    margin-top: 5px;
+  }
+  #outer-wrapper {
+    width: 100%;
+  }
+  #inner-wrapper {
+    margin: 0;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    margin-top: 100px;
+  }
+	#menu {
+    width: 1.4em;
+    font-size: 1.8em;
+    position: fixed;
+    top: 13px;
+    right: 13px;
+    cursor: pointer;
+	}
+	#nav.js {
+		display: none;
+	}
+	ul {
+    width: calc(100% - 52px);
+    background-image: url('../images/bg5.jpg');
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+	li { width:100%; }
+}
+
+@media screen and (min-width: 800px) {
+	#menu {
+		display: none;
+	}
 }

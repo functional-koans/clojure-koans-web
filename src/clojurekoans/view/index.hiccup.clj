@@ -78,7 +78,7 @@
    [:p "on Mac or Unix, or "]
    [:div.terminal "$ script\\run"]
    [:p "on Windows. "]
-   [:p " instead. You'll probably see an error message like this:"]
+   [:p "On the first run, you should see an error message like this:"]
    [:div.terminal " Now meditate on ~/clojure-koans/src/koans/01_equalities.clj:3"
     [:br]
     "---------------------"

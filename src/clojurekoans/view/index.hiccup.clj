@@ -108,7 +108,7 @@
     " to pass, one should pause to refactor and refine one's code before moving on to the next test."]
    [:p "The koans, unlike tests in real test-driven projects, are already written for you. When you are"
     " ready to begin your own Clojure project and therefore your own tests, consider using a framework like"
-    [:a {:href "http://speclj.com/"} " Speclj"]
+    [:a {:href "https://github.com/slagyr/speclj"} " Speclj"]
     " to aid you on your journey."]]
 
 
@@ -127,12 +127,12 @@
    [:p "Using the koans metaphor as a tool for learning a programming language started with the "
     [:a {:href "http://rubykoans.com/"} "Ruby Koans"]
     " by "
-    [:a {:href "http://edgecase.com/"} "EdgeCase"]
+    [:a {:href "https://github.com/edgecase"} "EdgeCase"]
     "; the Clojure koans themselves were started by developers at "
-    [:a {:href "http://thinkrelevance.com/"} "Relevance"]
+    [:a {:href "https://github.com/relevance"} "Relevance"]
     ". This website is produced and hosted by "
     [:a {:href "http://www.8thlight.com"} "8th Light"]
     " and powered by "
-    [:a {:href "http://www.joodoweb.com"} "Joodo"]
+    [:a {:href "https://github.com/slagyr/joodo"} "Joodo"]
     "."]]]
 [:div.clearfix]]

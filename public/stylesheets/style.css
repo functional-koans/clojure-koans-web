@@ -148,12 +148,12 @@ a:hover {
 }
 
 #stripe ul {
-	padding: 26px;
-	text-align: left;
+    padding: 26px;
+    text-align: left;
 }
 
 #stripe a {
-	color: #2a1807;
+  color: #2a1807;
   display: block;
   font-weight: normal;
   font-family: Rosarivo, Arial, Sans-serif;
@@ -163,7 +163,7 @@ a:hover {
 #stripe a:hover {
   background: rgba(255,255,255, .25);
   border-radius: 2px;
-	color: #e95d3d;
+  color: #e95d3d;
 }
 
 

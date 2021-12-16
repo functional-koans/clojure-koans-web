@@ -5,6 +5,7 @@
   [:title "Clojure Koans"]
 
   (include-css "/stylesheets/style.css")
+
   "<!--[if IE]>"
   (include-css "/stylesheets/iestyle.css")
   "<![endif]-->"

@@ -37,7 +37,7 @@
    [:p " Before we begin the koans, we need Clojure, and before we install Clojure, we'll need Java. You probably already have Java installed, but "
     "if you don't, it's not difficult. Oracle provides "
     [:a {:href "http://www.java.com/en/download/help/windows_manual_download.xml"} "installation instructions for Windows users"]
-    ", and Linux users should use their package manager of choice. Apple distributes Java 6 with their system update tool."]
+    ", and Linux users should use their package manager of choice. Apple distributes Java&nbsp;6 with their system update tool."]
    [:p "After downloading Java (if necessary), go to your console and enter:"]
    [:div.terminal "~ $ java -version"]
    [:p "Make sure the version installed is 1.5 or greater."]]
@@ -50,10 +50,10 @@
     ", Clojure's most popular dependency management tool. (It will install Clojure for us shortly.)"
     " Follow the "
     [:a {:href "http://leiningen.org/#install"} "installation instructions"]
-    " for Leiningen bliss. "]
+    " for Leiningen bliss."]
 
    [:p "Important: if you already have lein 1.x installed, you'll need to "
-    [:a {:href "https://github.com/technomancy/leiningen/wiki/Upgrading"} "upgrade to Leiningen 2"]
+    [:a {:href "https://github.com/technomancy/leiningen/wiki/Upgrading"} "upgrade to Leiningen&nbsp;2"]
     "."]
    [:p "Once you have Leiningen installed, you just need to clone the koans repo:"]
    [:div.terminal "$ git clone git://github.com/functional-koans/clojure-koans.git"]
@@ -61,7 +61,7 @@
        can still easily install the koans manually. [Note: this option will only
        work until "
     [:a {:href "https://github.com/blog/1302-goodbye-uploads"} "Github shuts down the Downloads feature completely"]
-    " in March 2013.] Just download and unzip the latest version of the koans "
+    " in March&nbsp;2013.] Just download and unzip the latest version of the koans "
     [:a {:href "https://github.com/functional-koans/clojure-koans/downloads"} "here"]
     ", and you should be ready to start."]]
 
